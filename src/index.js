@@ -3,36 +3,36 @@ var isClient = !!(typeof(window) !== "undefined" && typeof(navigator) !== "undef
 
 
 if (!isClient && (http = require("http")).METHODS) {
-    module.exports = http.METHODS.map(function(method){
+    module.exports = http.METHODS.map(function(method) {
         return method.toLowerCase();
     });
 } else {
     module.exports = [
-        "get",
-        "post",
-        "put",
-        "head",
-        "delete",
-        "options",
-        "trace",
+        "checkout",
+        "connect",
         "copy",
+        "delete",
+        "get",
+        "head",
         "lock",
+        "m-search",
+        "merge",
+        "mkactivity",
         "mkcol",
         "move",
-        "purge",
+        "notify",
+        "options",
+        "patch",
+        "post",
         "propfind",
         "proppatch",
-        "unlock",
+        "purge",
+        "put",
         "report",
-        "mkactivity",
-        "checkout",
-        "merge",
-        "m-search",
-        "notify",
-        "subscribe",
-        "unsubscribe",
-        "patch",
         "search",
-        "connect"
+        "subscribe",
+        "trace",
+        "unlock",
+        "unsubscribe"
     ];
 }
