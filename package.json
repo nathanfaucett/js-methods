@@ -1,0 +1,22 @@
+{
+  "name": "methods",
+  "version": "0.0.1",
+  "description": "Node.js supported methods for the browser and node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanfaucett/methods.git"
+  },
+  "main": "src/index.js",
+  "keywords": [
+    "methods",
+    "methods.js"
+  ],
+  "author": "Nathan Faucett",
+  "license": "BSD-2-Clause",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "",
+    "grunt-jsbeautifier": ""
+  }
+}
+
