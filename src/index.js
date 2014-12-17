@@ -1,8 +1,10 @@
-var isClient = !!(typeof(window) !== "undefined" && typeof(navigator) !== "undefined" && window.document),
-    http;
+var environment = require("environment");
 
 
-if (!isClient && (http = require("http")).METHODS) {
+var http;
+
+
+if (environment.node && (http = require("http")).METHODS) {
     module.exports = http.METHODS.map(function(method) {
         return method.toLowerCase();
     });
