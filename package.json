@@ -7,6 +7,7 @@
     "url": "https://github.com/nathanfaucett/methods.git"
   },
   "main": "src/index.js",
+  "browser": "src/browser.js",
   "keywords": [
     "methods",
     "methods.js"
@@ -20,7 +21,7 @@
     "grunt-jsbeautifier": ""
   },
   "dependencies": {
-    "environment": "nathanfaucett/environment"
+    "map": "nathanfaucett/map"
   }
 }
 
