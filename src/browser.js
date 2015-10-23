@@ -9,6 +9,7 @@ module.exports = [
     "m-search",
     "merge",
     "mkactivity",
+    "mkcalendar",
     "mkcol",
     "move",
     "notify",

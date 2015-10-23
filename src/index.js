@@ -1,7 +1,7 @@
 var http = require("http"),
-    map = require("map");
+    arrayMap = require("array-map");
 
 
-module.exports = map(http.METHODS, function(method) {
+module.exports = arrayMap(http.METHODS, function(method) {
     return method.toLowerCase();
 });
