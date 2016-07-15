@@ -1,5 +1,5 @@
 var http = require("http"),
-    arrayMap = require("array-map");
+    arrayMap = require("@nathanfaucett/array-map");
 
 
 module.exports = arrayMap(http.METHODS, function(method) {
