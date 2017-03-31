@@ -1,13 +1,18 @@
 {
   "name": "@nathanfaucett/methods",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node.js supported methods for the browser and node.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/nathanfaucett/methods.git"
   },
   "main": "src/index.js",
-  "browser": "src/browser.js",
+  "scripts": {
+    "test": "npm run test-node",
+    "test-node": "node ./test | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "node ./test",
+    "test-browser-local": "zuul --local 9999 --ui tape -- ./test"
+  },
   "keywords": [
     "methods",
     "methods.js"
@@ -16,11 +21,12 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-jsbeautifier": "^0.2.13"
-  },
-  "dependencies": {
-    "@nathanfaucett/array-map": "^0.0.1"
+    "@nathanfaucett/task": "^0.0.8",
+    "gulp-jsbeautifier": "^2.1.0",
+    "gulp-jshint": "^2.0.4",
+    "jshint": "^2.9.4",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "zuul": "^3.11.1"
   }
 }
